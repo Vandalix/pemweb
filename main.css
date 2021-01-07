@@ -1,0 +1,247 @@
+body {
+    margin:0;
+    padding: 0;
+}
+h2{
+    margin:0
+}
+#landing-page{
+    background-image: url('burger.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.title-background{
+    background: transparent;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+
+.title{
+    text-align: center;
+    border-color: black;
+    font-size: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    background: transparent;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+/*nav-slider*/
+
+.nav-slider{
+padding: 15px;
+cursor: pointer;
+
+}
+.line {
+    background: #eee;
+    height: 3px;
+    margin: 5px;
+    width: 30px;
+}
+.line:nth-child(1){
+    margin-top: 0;
+
+}
+
+/*nav-slider section*/
+
+.nav-slider-section{
+    background: rgba(0, 0, 0, 0.8 ) ;
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100%);
+}
+
+.close-nav-slider{
+    border: none;
+    outline: none;
+    float: right;
+    background: transparent;
+    color: #eee;
+    font-size: 1.5em;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.nav-links-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.nav-links-container li{
+    text-align: center;
+    padding: 10px;
+
+}
+
+.nav-links{
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.5em;
+}
+
+.openNav{
+animation: openNav 0.5s forwards;
+}
+
+.closeNav{
+animation: closeNav 0.5s forwards;
+}
+
+@keyframes openNav{
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes closeNav{
+    0%{
+        transform: translateX(0%);
+
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/*menu*/
+#menu{
+    background: #000 ;
+}
+.menu-title{
+    color: #D0D3D4;
+    text-align: center;
+    padding: 25px;
+    font-size: 2em;
+}
+
+p{
+    font-size: 2em;
+    color: #eee;
+    margin:0;
+}
+
+.menu-price{
+    float: right;
+}
+
+/*resto informasi*/
+#restaurant-info{
+    background: #070707;
+    padding: 20px;
+}
+
+.restaurant-info-title{
+    color:#D3CAC8;
+    text-align: center;
+}
+
+.address,.hours{
+    font-size: 1em !important;
+    text-align: center;
+}
+
+.address-content, .business-hours, .contact-content{
+padding: 10px;
+}
+.phone{
+    font-size: 1em !important;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#sejarah{
+    background: url('burger2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin-bottom: 0;
+}
+.sejarah-title{
+    color: #D3CAC8;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.content{
+    background: white;
+    width:50%;
+    padding:40px;
+    margin: 200px auto;
+    margin-top: 50;
+    margin-right: 50;
+    font-family:Arial, Helvetica, sans-serif;
+    opacity: 0.7;
+    background-color: #070707;
+    text-align: justify;
+
+    }
+
+.info-container{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+@media screen and (min-width:768px){
+    .info-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 30px;
+    }
+    .address-content, .business-hours{
+        border-right: 1px solid #eee;
+        padding: 30px;
+    }
+    .contact-content{
+        padding: 30px;
+    }
+}
+
+    .ml5 {
+        position: relative;
+        font-weight: 300;
+        font-size: 4.5em;
+        color: #402d2d;
+        text-align: center;
+      }
+      
+      .ml5 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.1em;
+        padding-right: 0.05em;
+        padding-bottom: 0.15em;
+        line-height: 1em;
+      }
+      
+      .ml5 .line {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 3px;
+        width: 100%;
+        background-color: #402d2d;
+        transform-origin: 0.5 0;
+      }
+      
+      .ml5 .ampersand {
+        font-family: Baskerville, serif;
+        font-style: italic;
+        font-weight: 400;
+        width: 1em;
+        margin-right: -0.1em;
+        margin-left: -0.1em;
+      }
+      
+      .ml5 .letters {
+        display: inline-block;
+        opacity: 0;
+      }
